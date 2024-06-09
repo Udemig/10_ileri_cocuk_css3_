@@ -1,0 +1,127 @@
+/*
+
+h1 {
+  background-color: red;
+  padding: 20px;
+}
+h3 {
+  background-color: aqua;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding: 20px 40px 50px 10px;
+}
+h6 {
+  background-color: chocolate;
+  margin: 10px 30px 50px 60px;
+}
+p {
+  background-color: tomato;
+}
+a {
+  background-color: brown;
+}
+i {
+  background-color: blueviolet;
+}
+
+div {
+  background-color: red;
+}
+span {
+  background-color: darkblue;
+}
+*/
+body {
+  background-color: bisque;
+}
+
+.final {
+  background-color: red;
+  color: #fff;
+}
+
+.boxes {
+  padding: 30px 20px;
+  margin: 30px auto;
+}
+.bxs-0,
+.bxs-2,
+.bxs-3,
+.bxs-4,
+.bxs-5,
+.bxs-6,
+.bxs-7,
+.bxs-8,
+.bxs-9 {
+  background-color: saddlebrown;
+}
+
+.bxs-1 {
+  background-color: saddlebrown;
+  display: flex;
+  gap: 10px;
+}
+
+.bxs-2 {
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+.bxs-3 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.bxs-4 {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+.bxs-5 {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+.bxs-6 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.bxs-7 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.bxs-8 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.bxs-9 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.box {
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.kapsayıcı {
+  background-color: aquamarine;
+  padding: 30px 20px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+  */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.kutu {
+  background-color: brown;
+  padding: 20px;
+}

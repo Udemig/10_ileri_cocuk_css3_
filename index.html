@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css3 Telafi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Css3 Telafi Dersi -->
+    <!-- <h1>Css3 Telafi Dersi</h1>
+    <h3>Udemig akademisinde css3 telafi dersine hoşgeldiniz.</h3>
+    <h6>Css3 css'in en güncel halidir.</h6>
+    <p>
+      Cascading Style Sheets, HTML'e ek olarak metin ve format biçimlendirme
+      alanında fazladan olanaklar sunan bir işaretleme dilidir.
+    </p>
+    <a href="https://udemig.com/" target="_blank">Udemig'e Git </a> <br />
+    <i>İtalik Yazım</i> -->
+
+    <!--* Html elemanları bulunduğu satırda kapladığı alana göre ikiye ayrılır.
+    
+     Block Eleman: Bulunduğu satırı 100% kaplar.Sonrasındaki eleman yer bırakmaz.
+    -- div
+
+     İnline Eleman: Bulunduğu satırda 'içeriği' kadar yer kaplar.
+    -- span
+    -->
+    <!-- <div>Div</div>
+    <span>span</span> -->
+
+    <!-- Flexbox Yapısı -->
+    <h1>Flexbox</h1>
+    <p>
+      Flexbox yapısı kapsayıcı içerisinde yer alan elemanları kolay birşekilde
+      hizalamak için kullanılır.
+      <span class="final"
+        >Buradaki önemli kısım flex yapısı hizalanacak elemanların kapsayıcısına
+        verilir.</span
+      >
+      - Flex yapısında kullanılan satır ve sütün kavramına değinelim. <br />
+      - Satır yatay ekseni ifade eder.Bunun ingilizce karşılığı 'row' dur.
+      <br />
+      - Sütun ise dikey ekseni ifade eder.Bunun ingilizce karşılığı 'column'
+      dır.
+      <br />
+      - Elemanlar default(varsayılan) olarak alt alta sıralanır[yani
+      flex-direction:column].Yani varsayılan yönelim 'column' dır.Flex yapısı
+      aktif edilince flex-direction:row
+      <br />
+      - Flex yapısı aktif edildikten sonra kullanılan flex yönünü belirleyen
+      'flex-direction' ile yapının satır yada sütün şekilde olacağı
+      belirlenebilir.
+      <br />
+      <br />
+      <span class="final">
+        -- Özetle flexbox yapısı kapsayıcı içerisinde elemanların rahat bir
+        şekikde hizalanması için kullanılır.</span
+      >
+    </p>
+    <!-- Ör: -->
+    <h3>Varsayılan Durum[ Bu durumda yapılar 'column' şeklinde hizalanır]</h3>
+    <div class="boxes bxs-0">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex;verilince</h3>
+    <div class="boxes bxs-1">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; flex-direction:row-reverse</h3>
+    <div class="boxes bxs-2">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; flex-direction:column-reverse</h3>
+    <div class="boxes bxs-3">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; justify-content:start[Bu varsayılan durumdur.]</h3>
+    <div class="boxes bxs-4">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; justify-content:end</h3>
+    <div class="boxes bxs-5">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; justify-content:center</h3>
+    <div class="boxes bxs-6">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; justify-content:space-between</h3>
+    <div class="boxes bxs-7">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; justify-content:space-around</h3>
+    <div class="boxes bxs-8">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <h3>Display:flex; justify-content:space-evenly</h3>
+    <div class="boxes bxs-9">
+      <div class="box box-1">Kutu-1</div>
+      <div class="box box-2">Kutu-2</div>
+      <div class="box box-3">Kutu-3</div>
+      <div class="box box-4">Kutu-4</div>
+      <div class="box box-5">Kutu-5</div>
+      <div class="box box-6">Kutu-6</div>
+      <div class="box box-7">Kutu-7</div>
+      <div class="box box-8">Kutu-8</div>
+      <div class="box box-9">Kutu-9</div>
+      <div class="box box-10">Kutu-10</div>
+    </div>
+    <p>
+      Display:flex; ile esnek yapıya kavuşan kapsayıcı default(varsayılan)
+      olarak sahip olduğu özellikleri değiştirir.Default olarak
+      flex-direction:column; olan kapsayıcılar display:flex; verilince bunu
+      flex-direction:row; olarak günceller.Yani başlangıçta satırı kapyalan yapı
+      yan yana gelir.
+      <br /><br />
+      Bir diğer özellik ise justif-content'dir.Bu css özelliği flex yönünde
+      elemanın nasıl yerleşeceğini belirler.
+      start/end/center/space-between/space-around ve space-evenly değerleri
+      alır.
+      <br /><br />
+      -- start ==> Default(varsaılan) değerdir.Yapıyı başlanıca sabitler
+      <br />
+      -- end ==> Yapıyı bitişe sabitler
+      <br />
+      -- center ==> Yapıyı ortaya sabitler
+      <br />
+      -- space-between ==> Elemanları yapı içerisinde max uzaklık olacak şekilde
+      hizalar.Yani başlangıçtaki elemanı sola bitişteki elemanı sağa yaslar.
+      <br />
+      -- space-aroun ==> Elemanları yapı içerisinde sol ve sağdan eşit uzaklıkta
+      olacak şekilde yerleştirir.Aradaki elemanlar bu uzaklığın 2 katı olacak
+      şekilde yerleşir.
+      <br />
+      -- space-evely ==> Elemanları yapı içerisinde aralarında eşit uzaklık ile
+      yerleştirir.
+    </p>
+
+    <br /><br /><br /><br />
+    <h1>Grid Yapısı</h1>
+
+    <p>
+      Grid yapısı esnek bir ızgara şeklindedir.Yukarıda değindiğimiz satır ve
+      sütunların birleşimi ile ızgara deseni elde edilir. Bu şekilde daha kolay
+      responsive tasarım elde edilir.Responsive tasarımımızın her ekrana
+      (laptop,pc,telefoni ,tablet,televizyon,...) o ekran boyutunda güzel
+      görünüm elde etmek demektir.
+      <br />
+      Grid yapısı ile her ekranda kaplanacak alan belirlenir.Yani belirli
+      genişlik genellikle tercih edilmez.
+    </p>
+
+    <div class="kapsayıcı">
+      <div class="kutu">Eleman 1</div>
+      <div class="kutu">Eleman 2</div>
+      <div class="kutu">Eleman 3</div>
+      <div class="kutu">Eleman 4</div>
+      <div class="kutu">Eleman 5</div>
+      <div class="kutu">Eleman 6</div>
+    </div>
+  </body>
+</html>
